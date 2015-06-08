@@ -1,0 +1,11 @@
+{
+  "name": "gbn-vis",
+  "version": "0.0.1",
+  "description": "Visualizer for gbn Gameboy emulator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Jeff Smith",
+  "license": "MIT"
+}
