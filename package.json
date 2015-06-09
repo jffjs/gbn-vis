@@ -4,8 +4,17 @@
   "description": "Visualizer for gbn Gameboy emulator.",
   "main": "index.js",
   "scripts": {
+    "start": "node_modules/.bin/beefy js/index.js --open",
     "test": "test"
   },
   "author": "Jeff Smith",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "beefy": "^2.1.5",
+    "browserify": "^10.2.4"
+  },
+  "dependencies": {
+    "gbn": "git://github.com/jffjs/gbn",
+    "react": "^0.13.3"
+  }
 }
