@@ -11,10 +11,17 @@
   "license": "MIT",
   "devDependencies": {
     "beefy": "^2.1.5",
-    "browserify": "^10.2.4"
+    "browserify": "^10.2.4",
+    "reactify": "^1.1.1",
+    "watchify": "^3.2.2"
   },
   "dependencies": {
     "gbn": "git://github.com/jffjs/gbn",
     "react": "^0.13.3"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
   }
 }
