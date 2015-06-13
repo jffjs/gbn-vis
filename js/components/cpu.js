@@ -1,4 +1,5 @@
-var React = require('react');
+var React = require('react'),
+    util  = require('../util');
 
 module.exports = React.createClass({
   render: function() {
@@ -20,14 +21,14 @@ module.exports = React.createClass({
                 <td>L</td>
             </tr>
             <tr>
-                <td>0x{cpu.register.A.toString(16).toUpperCase()}</td>
-                <td>0x{cpu.register.F.toString(16).toUpperCase()}</td>
-                <td>0x{cpu.register.B.toString(16).toUpperCase()}</td>
-                <td>0x{cpu.register.C.toString(16).toUpperCase()}</td>
-                <td>0x{cpu.register.D.toString(16).toUpperCase()}</td>
-                <td>0x{cpu.register.E.toString(16).toUpperCase()}</td>
-                <td>0x{cpu.register.H.toString(16).toUpperCase()}</td>
-                <td>0x{cpu.register.L.toString(16).toUpperCase()}</td>
+                <td>{util.hexByte(cpu.register.A)}</td>
+                <td>{util.hexByte(cpu.register.F)}</td>
+                <td>{util.hexByte(cpu.register.B)}</td>
+                <td>{util.hexByte(cpu.register.C)}</td>
+                <td>{util.hexByte(cpu.register.D)}</td>
+                <td>{util.hexByte(cpu.register.E)}</td>
+                <td>{util.hexByte(cpu.register.H)}</td>
+                <td>{util.hexByte(cpu.register.L)}</td>
             </tr>
         </table>
     );

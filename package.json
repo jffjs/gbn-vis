@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "gbn": "git://github.com/jffjs/gbn",
+    "pad": "^0.1.0",
     "react": "^0.13.3"
   },
   "browserify": {
